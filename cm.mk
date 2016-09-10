@@ -12,24 +12,24 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-$(call inherit-product, device/wileyfox/kipper/full_kipper.mk)
+$(call inherit-product, device/google/shamrock/full_shamrock.mk)
 
 # Inherit some common CM stuff.
 $(call inherit-product, vendor/cm/config/common_full_phone.mk)
 
 # Must define platform variant before including any common things
-TARGET_BOARD_PLATFORM_VARIANT := msm8939
+TARGET_BOARD_PLATFORM_VARIANT := msm8952
 
-PRODUCT_NAME := cm_kipper
-BOARD_VENDOR := wileyfox
-PRODUCT_DEVICE := kipper
+PRODUCT_NAME := cm_shamrock
+BOARD_VENDOR := google
+PRODUCT_DEVICE := shamrock
 
-PRODUCT_GMS_CLIENTID_BASE := android-wileyfox
+PRODUCT_GMS_CLIENTID_BASE := android-google
 
-PRODUCT_MANUFACTURER := Wileyfox
-PRODUCT_MODEL := Wileyfox Storm
+PRODUCT_MANUFACTURER := Google
 
-PRODUCT_BRAND := Wileyfox
-TARGET_VENDOR := wileyfox
-TARGET_VENDOR_PRODUCT_NAME := Storm
-TARGET_VENDOR_DEVICE_NAME := kipper
+PRODUCT_BRAND := Google
+TARGET_VENDOR := google
+TARGET_VENDOR_PRODUCT_NAME := Shamrock
+TARGET_VENDOR_DEVICE_NAME := shamrock
+

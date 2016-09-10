@@ -1,6 +1,10 @@
 # Camera
 PRODUCT_PACKAGES += \
+<<<<<<< HEAD
     camera.msm8916 \
+=======
+    camera.msm8952 \
+>>>>>>> 03bb41f... Import source
     libmm-qcamera \
     Snap
 

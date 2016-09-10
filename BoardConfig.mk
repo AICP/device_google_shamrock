@@ -13,11 +13,10 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-include device/cyanogen/msm8916-common/BoardConfigCommon.mk
+include device/google/msm8952-common/BoardConfigCommon.mk
 
-include device/wileyfox/kipper/board/*.mk
-
-TARGET_BOARD_INFO_FILE := device/wileyfox/kipper/board-info.txt
+include device/google/shamrock/board/*.mk
 
 # inherit from the proprietary version
--include vendor/wileyfox/kipper/BoardConfigVendor.mk
+-include vendor/google/shamrock/BoardConfigVendor.mk
+

@@ -18,8 +18,13 @@
 set -e
 
 # Required!
+<<<<<<< HEAD
 DEVICE=kipper
 VENDOR=wileyfox
+=======
+DEVICE=shamrock
+VENDOR=google
+>>>>>>> 03bb41f... Import source
 
 # Load extractutils and do some sanity checks
 MY_DIR="${BASH_SOURCE%/*}"
@@ -56,7 +61,10 @@ cat << EOF >> "$ANDROIDMK"
 endif
 
 \$(shell mkdir -p \$(PRODUCT_OUT)/system/vendor/lib/egl && pushd \$(PRODUCT_OUT)/system/vendor/lib > /dev/null && ln -s egl/libEGL_adreno.so libEGL_adreno.so && popd > /dev/null)
+<<<<<<< HEAD
 \$(shell mkdir -p \$(PRODUCT_OUT)/system/vendor/lib64/egl && pushd \$(PRODUCT_OUT)/system/vendor/lib64 > /dev/null && ln -s egl/libEGL_adreno.so libEGL_adreno.so && popd > /dev/null)
+=======
+>>>>>>> 03bb41f... Import source
 EOF
 
 # We are done!
