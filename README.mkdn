@@ -1,4 +1,4 @@
-Copyright 2016 - The CyanogenMod Project
+Copyright 2016 - The AICP Project
 
 Android One Third Generation Device's (shamrock)
 ============================================================
