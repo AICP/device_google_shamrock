@@ -41,6 +41,8 @@ persist.audio.calfile6=/etc/acdbdata/shamrock/msm8952-l9300-snd-card/shamrock_Sp
 
 # Bluetooth
 bluetooth.hfp.client=1
+qcom.bluetooth.soc=smd
+ro.qualcomm.bt.hci_transport=smd 
 
 # Camera
 persist.camera.HAL3.enabled=1
