@@ -123,5 +123,3 @@ ro.vendor.extension_library=libqti-perfd-client.so
 # Wifi
 wifi.interface=wlan0
 
-# Navigation 
-qemu.hw.mainkeys=0
