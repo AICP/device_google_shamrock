@@ -90,6 +90,11 @@ ro.gps.agps_provider=1
 # Navigation
 qemu.hw.mainkeys=0
 
+# OEM
+import /oem/oem.prop ro.product.model
+import /oem/oem.prop persist.radio.multisim.config
+ro.product.model.platform=1
+
 # Radio
 ro.telephony.default_cdma_sub=0
 ro.telephony.default_network=22,22
