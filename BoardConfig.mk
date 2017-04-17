@@ -163,3 +163,32 @@ TARGET_USES_WCNSS_CTRL := true
 WIFI_DRIVER_FW_PATH_AP := "ap"
 WIFI_DRIVER_FW_PATH_STA := "sta"
 WPA_SUPPLICANT_VERSION := VER_0_8_X
+
+# Peripheral manager
+TARGET_PER_MGR_ENABLED := true
+
+# Recovery
+TARGET_RECOVERY_UPDATER_LIBS := librecovery_updater_cm
+TARGET_RECOVERY_FSTAB := device/google/shamrock/rootdir/etc/fstab.qcom
+
+# Charger
+WITH_CM_CHARGER := false
+BOARD_CHARGER_DISABLE_INIT_BLANK := true
+BOARD_HAL_STATIC_LIBRARIES += libhealthd.msm8952
+BOARD_HEALTHD_CUSTOM_CHARGER_RES := $(DEVICE_PATH)/charger/images
+
+
+# Dexpreopt
+WITH_DEXPREOPT := true
+
+# Camera
+BOARD_CAMERA_SENSORS := imx220 imx230 ov8858_q8v19w_spirit
+TARGET_USE_VENDOR_CAMERA_EXT := true
+USE_DEVICE_SPECIFIC_CAMERA := true
+TARGET_HAS_LEGACY_CAMERA_HAL1 := true
+TARGET_USES_MEDIA_EXTENSIONS := true
+
+# GPS
+TARGET_NO_RPC := true
+USE_DEVICE_SPECIFIC_GPS := true
+
